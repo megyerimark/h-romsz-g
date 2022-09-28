@@ -1,6 +1,7 @@
 // Megyeri Márk Máté
 // Szoft 2/N 
 // 2022-09-21
+// 2022-09-28
 const calcButton = document.querySelector('#calcButton');
 const eredmeny = document.querySelector('#eredmeny');
 calcButton.addEventListener('click', () => {
