@@ -3,6 +3,7 @@
 // 2022-09-21
 
 const calcButton=document.querySelector('#calcButton');
+const eredmeny = document.querySelector('#eredmeny');
 
 
 calcButton.addEventListener('click', ()=>{
@@ -12,10 +13,14 @@ const height=document.querySelector('#height') as HTMLInputElement;
 let baseNum :number =Number (base.value);
 let heightNum :number =Number (height.value);
 let area= calcArea(baseNum,heightNum);
-alert(area)
-})
+eredmeny.innerHTML = String(area);
+base.value="";
+height.value="";
+
+// alert(area);
+});
 
 
-function calcArea(base:number,height:number):number{
+function calcArea(base: number,height: number):number{
     return base*height/2;
 }
